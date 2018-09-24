@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "Google Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Google Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+div {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1128px) {
+  .everything {
+    display: none !important;
+    background-color: #fff;
+    width: 100%;
+  }
+  .resolution {
+    text-align: center;
+    font-size: 22px;
+    color: #23272a;
+    margin: 10px 25px 50%;
+    display: block !important;
+  }
+  .reolution {
+    text-align: center;
+    margin: 50% auto 0;
+    font-size: 180px;
+    display: block !important;
+  }
+}
+
+.everything {
+  display: block;
+}
+.resolution {
+  display: none;
+}
+.reolution {
+  display: none;
+}
+
+#dchessboard {
+  margin: 50px 50% 0;
+  transform: translateX(-50%);
+  width: 456px;
+  height: 456px;
+  border: 2px solid rgba(255,255,255,0);
+  padding: 50px;
+}
+
+#chess div .dimensions {
+  width: 55px;
+  height: 55px;
+}
+
+#chess div .td {
+  border: 1px solid #2c2f33;
+}
+
+#chess .tr:nth-child(2n) .td:nth-child(2n+1) {
+  background-color: #23272a;
+}
+
+#chess .tr:nth-child(2n+1) .td:nth-child(2n) {
+  background-color: #23272a
+}
+
+#chess div .td:hover {
+  background-color: #ffff33 !important;
+}
+
+#ui {
+  width: 100%;
+}
+
+#ui .p {
+  width: 57px;
+  height: 25px;
+  font-size: 18px;
+  color: #23272a;
+  display: inline-block;
+}
+
+#ui .p-p {
+  text-align: center;
+  top: 50%;
+}
+
+#ui-n {
+  margin: -440px 0 0 -55px;
+  display: block;
+  position: absolute;
+}
+
+#ui-n .p2 {
+  float: left;
+  width: 100%;
+  height: 57px;
+  font-size: 18px;
+  color: #23272a;
+  display: block;
+}
+
+#ui-n .p2-p {
+  text-align: center;
+  top: 50%;
+}
+
+#demo {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#selectedp {
+  text-align: center;
+  font-size: 18px;
+}
+
+#turnHero {
+  text-align: center;
+  font-size: 18px;
+}
+
+.blue {
+  background-color: #30cde2 !important;
+}
+
+#dead-whites {
+  width: 350px;
+  margin: -440px 0 0 -400px;
+  padding: 50px 0;
+  display: block;
+  position: absolute;
+  border: 3px solid #23272a;
+}
+
+.casacas {
+  font-size: 16px;
+  text-align: center;
+}
+
+#dead-white-container {
+  margin: 0 auto;
+  width: 90%;
+  padding-left: 40px;
+}
+
+.ssasa {
+  display: inline-block;
+  padding: 10px 0px;
+  margin: 0 auto;
+}
+
+#dead-black {
+  width: 350px;
+  margin: -440px 0 0 500px;
+  padding: 50px 0;
+  display: block;
+  position: absolute;
+  border: 3px solid #23272a;
+}
+
+.casacas {
+  font-size: 16px;
+  text-align: center;
+}
+
+#dead-black-container {
+  margin: 0 auto;
+  width: 90%;
+  padding-left: 40px;
+}
+
+.ssasa {
+  display: inline-block;
+  padding: 10px 0px;
+  margin: 0 auto;
+}
+
+.no-js #loader {
+  display: none;
+}
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(img/loader-128x/Preloader_3.gif) center no-repeat #fff;
+}
